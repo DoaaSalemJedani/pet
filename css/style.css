@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("styleFirstBlog.css");
+@import url("styleSecondBlog.css");
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -29,6 +31,8 @@ header{
 }
 
 .Navigation a{
+    display: grid;
+    justify-content: left;
     color: azure;
     text-decoration: none;
     font-size: 1.1em;
@@ -50,7 +54,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background : url(file:///C:/Users/duaas/OneDrive/Desktop/Blog/img/cat.jpeg);
+    background-image: url("file:///C:/Users/duaas/OneDrive/Desktop/Blog/img/cat.jpeg");
     background-size: cover;
     background-position: center;
 
@@ -227,4 +231,68 @@ transition: 0.7s ease;
 
 .footer-title span{
     color: blueviolet;
+}
+
+@media (max-width:1023px) {
+  
+    .Home h2{
+        font-size: 1.7em;
+    }
+    .Home h3{
+        font-size: 1em;
+        
+    }
+
+    .Blog h2{
+        font-size: 1.5em;
+    }
+
+    .Contact h3{
+        font-size: 1.5em;
+     }
+
+    header{
+        padding: 12px 20px;
+    }
+    .start-page h1{
+        font-size: 1.1em;
+    }
+    .start-page h3{
+        font-size: 0.8em;
+        
+    }
+    .start-page figcaption{
+        font-weight: 300;
+        font-size: 0.8em;
+        }
+
+    section{
+        padding: 80px 20px;
+    }
+
+     .footer-title{
+        font-size: 0.8em;
+     }
+     .social-icon a{
+        font-size: 1em;
+        padding-right: 10px;
+    }
+    .avatar{
+    border-radius: 80%;
+}
+.body h2{
+    font-size: 1.2em;
+    font-weight: 750;
+}
+.body p{
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+
+.quotes blockquote{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+    
 }
