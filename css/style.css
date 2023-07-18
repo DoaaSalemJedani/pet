@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url("styleFirstBlog.css");
-@import url("styleSecondBlog.css");
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -11,7 +9,7 @@
 }
 
 header{
-    background-color:darkcyan;
+    background-color:#bb726b;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -22,12 +20,16 @@ header{
 
 }
 
-.logo{
+.StorName{
     text-decoration: none;
     color: azure;
-    text-transform: uppercase;
+    text-transform:capitalize;
     font-weight: bold;
     font-size: 1.8em;
+}
+
+.Navigation li{
+    display: inline-block;
 }
 
 .Navigation a{
@@ -42,11 +44,35 @@ header{
 }
 
 .Navigation a:hover{
-color: aquamarine;
+color: #8d4441;
+}
+.menu a:hover{
+    color: #8d4441;
 }
 
+.menu a {
+    padding: 12px;
+    color:#fefaf9;
+    text-decoration: none;
+}
+
+.menu li{
+    display: block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #bd726f;
+    padding: 0;
+} 
+
+.dropdown:hover .menu{
+    display: block;
+}
 section{
     padding: 100px 200px;
+    background-color: #efecf0;
 }
 
 .Home{
@@ -54,28 +80,67 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("file:///C:/Users/duaas/OneDrive/Desktop/Blog/img/cat.jpeg");
+    background-image: url("../img/home-img.jpeg");
     background-size: cover;
     background-position: center;
 
 }
+.PHome{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/p-img.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
-.Home h2{
-    color:aquamarine;
+
+.Home h1{
+    color:aliceblue;
     font-style: italic;
     font-size: 2.3em;
-    font-weight: 1000;
+    font-weight: 1000; 
 }
-.Home h3{
+
+.PHome h1{
+    color:aliceblue;
+    font-style: italic;
+    font-size: 2.3em;
+    font-weight: 1000; 
+}
+
+.Home h2{
     display: inline-block;
     margin-top: 10px;
     color: azure;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 600;
 }
+
+.Aboutus{
+    display: inline-block;
+    justify-content: center;
+    color:#3e342e;
+    text-transform:capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 1.8em;  
+}
+
+.Aboutus ul{
+    display:inline-block;
+    justify-content: center;
+    color:#3e342e;
+    text-transform:capitalize;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 1em;   
+}
+
 .Main-btn{
 color:azure;
-background-color:blueviolet;
+background-color:#9f5552;
 text-decoration: none;
 font-size: 1.1em;
 font-weight: 600;
@@ -90,18 +155,12 @@ transition: 0.7s ease;
 }
 
 .Main-btn:hover{
-    background-color: rgb(71, 0, 138);
-    transform: scale(1.1);
+    background-color: #bd726f;
+    transform: scale(1.3);
 }
 
-.social-icon a{
-    color: blueviolet;
-    font-size: 1.6em;
-    padding-right: 30px;
-}
-
-.Blog {
-    background-color: rgb(220, 243, 241);
+.Product {
+    background-color: #efecf0;
 }
 
 .content{
@@ -119,19 +178,9 @@ transition: 0.7s ease;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.Blog h2{
-    display: flex;
-    justify-content: center;
-    color:blueviolet;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 2.5em;
-}
  .card{
-    background-color: azure;
-    border: 2px solid azure;
+    background-color: rgb(219, 175, 173);
+    border: 2px solid rgb(219, 175, 173);
     min-height: 14em;
     width: 23em;
     overflow: hidden;
@@ -151,73 +200,35 @@ transition: 0.7s ease;
     opacity: 0.8;
  }
 
- .Blog-Info{
+ .Info{
     padding: 1em;
  }
- .Blog-title{
+ .title{
     font-size: 1.2em;
     color: black;
     text-transform: uppercase;
     font-weight: 800;
  }
- .Blog-Subtitle{
+ .Subtitle{
     display: flex;
     margin-top: 10px;
  }
- .More-details{
+ .order{
     text-decoration: none;
-    color: blueviolet;
+    color: #9f5552;
  }
 
- .More-details:hover{
-    color: rgb(71, 0, 138);
+ .order:hover{
+    color: #bd726f;
  }
- input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color:blueviolet;
-    color: white;
-    font-size: 1.5;
-    font-weight: 800;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color:rgb(71, 0, 138);
-    transform: scale(1.1);
-  }
-  
-  .Contact {
-    border-radius: 5px;
-    background-color: rgb(193, 229, 227);
-    color: blueviolet;
-    padding: 20px;
-  }
 
-  .Contact h3{
-    display: flex;
-    justify-content: center;
-    color:blueviolet;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 2.5em;
-}
+ .SAR {
+    color: #8d4441;
+ }
+
 
 .footer{
-   background-color: #19201e; 
+   background-color: #3e342e;
    color: azure;
    padding: 2em;
    display: flex;
@@ -230,8 +241,15 @@ transition: 0.7s ease;
 }
 
 .footer-title span{
-    color: blueviolet;
+    color: aliceblue;
 }
+
+.footer-q{
+    font-size: 1.3em;
+    font-weight: 600;  
+    color:aliceblue
+}
+
 
 @media (max-width:1023px) {
   
